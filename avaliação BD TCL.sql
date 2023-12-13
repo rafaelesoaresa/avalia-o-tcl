@@ -224,6 +224,14 @@ VALUES
 ('tecnico em computaçao grafica ', 24),
 ('tecnico em desenvolvimento de games ', 18);
 -- Criar o primeiro savepoint.
+
+INSERT INTO Funcionario (cargo, data_admissao, cpf_funcionario, email_funcionario, codigo_dep)
+VALUES
+('Arquiteto de solucoes', '2021-01-27', '389.542.783-65', 'valdecir@meuemail.com'4);
+
+insert INTO Projeto(nome_projeto, duracao_horas_projeto, descricao_dep, codigo_funcionario, codigo_dep_projeto)
+VALUES
+(' gestao de projetos', 394,'setor de gestao de projetos de TI.', 1, 4 );
  SAVEPOINT savepoint_inserts_curso;
  
  -- Inserir 3 novos cursos adicionais
